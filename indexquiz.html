@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael's Quiz Challenge</title>
+    <link rel="stylesheet" href="./quizstyle.css">
+</head>
+<body>
+
+    <nav>
+        <div id="view-high-scores">View Highscores</div>
+        <div>Time: <span id="time">0</span></div>
+    </nav>
+
+    <section id="instruction">
+        <h1>Michael's Quiz Challenge</h1>
+        <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+        <button id="start">Start Quiz</button>
+    </section>
+
+    <section id="quiz">
+        <h1 id="question">Question</h1>
+        <div id="choices">
+            <div class="choice" id="choice1">Choice 1</div>
+            <div class="choice" id="choice2">Choice 2</div>
+            <div class="choice" id="choice3">Choice 3</div>
+            <div class="choice" id="choice4">Choice 4</div>
+        </div>
+        <div id="feedback"></div>
+    </section>
+
+    <section id="results">
+        <h1>All Done!</h1>
+        <p>Your final score is <span id="final-score"></span></p>
+        <form id="form">
+            <input type="text" id="initials" placeholder="Enter Initials">
+            <button id="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="highscores">
+        <h1>Highscores</h1>
+        <ol id="highscore-list"></ol>
+        <button id="go-back">Go Back</button>
+        <button id="clear">Clear Highscores</button>
+    </section>
+
+    <script src="./quiz.js"></script>
+</body>
+</html>
